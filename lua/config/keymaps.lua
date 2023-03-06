@@ -144,55 +144,55 @@ map(
 map(
   "n",
   "<leader>cgd",
-  ":lua vim.lsp.buf.definition()<CR>",
+  "<Cmd>lua vim.lsp.buf.definition()<CR>",
   { noremap = true, silent = true, desc = "Goto definition" }
 )
 map(
   "n",
   "<leader>cgD",
-  ":lua vim.lsp.buf.declaration()<CR>",
+  "<Cmd>lua vim.lsp.buf.declaration()<CR>",
   { noremap = true, silent = true, desc = "Goto declaration" }
 )
 map(
   "n",
   "<leader>cgi",
-  ":lua vim.lsp.buf.implementation()<CR>",
+  "<Cmd>lua vim.lsp.buf.implementation()<CR>",
   { noremap = true, silent = true, desc = "Goto implementations" }
 )
 map(
   "n",
   "<leader>cgs",
-  ":lua vim.lsp.buf.document_symbol()<CR>",
+  "<Cmd>lua vim.lsp.buf.document_symbol()<CR>",
   { noremap = true, silent = true, desc = "List buffer symbols" }
 )
 map(
   "n",
   "<leader>cgS",
-  ":lua vim.lsp.buf.workspace_symbol()<CR>",
+  "<Cmd>lua vim.lsp.buf.workspace_symbol()<CR>",
   { noremap = true, silent = true, desc = "List worskpace symbols" }
 )
 map(
   "n",
   "<leader>cgr",
-  ":lua vim.lsp.buf.references()<CR>",
+  "<Cmd>lua vim.lsp.buf.references()<CR>",
   { noremap = true, silent = true, desc = "List references" }
 )
 map(
   "n",
   "<leader>cgt",
-  ":lua vim.lsp.type_definition()<CR>",
+  "<Cmd>lua vim.lsp.type_definition()<CR>",
   { noremap = true, silent = true, desc = "Goto type definition" }
 )
 map(
   "n",
   "<leader>ch",
-  ":lua vim.lsp.buf.hover()<CR>",
+  "<Cmd>lua vim.lsp.buf.hover()<CR>",
   { noremap = true, silent = true, desc = "Hover context" }
 )
 map(
   "n",
   "<leader>ch",
-  ":lua vim.lsp.buf.signature_help()<CR>",
+  "<Cmd>lua vim.lsp.buf.signature_help()<CR>",
   { noremap = true, silent = true, desc = "Signature help text" }
 )
 
