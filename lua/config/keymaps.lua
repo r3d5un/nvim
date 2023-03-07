@@ -34,14 +34,14 @@ map("n", "<leader>nrn", function()
 end, { noremap = true, silent = true, desc = "New note" })
 
 map(
-  "v",
+  "n",
   "<leader>nri",
   "<Cmd>'<,'>ZkNewFromTitleSelection<CR>",
   { noremap = true, silent = true, desc = "Insert link" }
 )
 
 map(
-  "v",
+  "n",
   "<leader>nrI",
   "<Cmd>'<,'>ZkNewFromContentSelection<CR>",
   { noremap = true, silent = true, desc = "New note from content" }
@@ -76,14 +76,14 @@ map(
 )
 
 map(
-  "v",
+  "n",
   "<leader>nrl",
   "<Cmd>'<,'>ZkInsertLinkAtSelection<CR>",
   { noremap = true, silent = true, desc = "Link" }
 )
 
 map(
-  "v",
+  "n",
   "<leader>nrm",
   "<Cmd>'<,'>ZkMatch<CR>",
   { noremap = true, silent = true, desc = "Find match" }
