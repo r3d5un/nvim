@@ -37,14 +37,14 @@ map(
   "n",
   "<leader>nri",
   "<Cmd>'<,'>ZkNewFromTitleSelection<CR>",
-  { noremap = true, silent = true, desc = "Insert link" }
+  { noremap = true, silent = true, desc = "New note with title" }
 )
 
 map(
   "n",
   "<leader>nrI",
   "<Cmd>'<,'>ZkNewFromContentSelection<CR>",
-  { noremap = true, silent = true, desc = "New note from content" }
+  { noremap = true, silent = true, desc = "New note with content" }
 )
 
 map(
@@ -72,14 +72,7 @@ map(
   "n",
   "<leader>nrl",
   "<Cmd>'<,'>ZkInsertLinkAtSelection<CR>",
-  { noremap = true, silent = true, desc = "Link" }
-)
-
-map(
-  "n",
-  "<leader>nrl",
-  "<Cmd>'<,'>ZkInsertLinkAtSelection<CR>",
-  { noremap = true, silent = true, desc = "Link" }
+  { noremap = true, silent = true, desc = "Insert Link" }
 )
 
 map(
