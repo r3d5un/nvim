@@ -25,6 +25,7 @@ return {
       "vim",
       "yaml",
       -- additional
+      "http",
       "rust",
       "sql",
       "c_sharp",

@@ -13,4 +13,7 @@ return {
   wk.register({
     h = { name = "hop" },
   }, { prefix = "<leader>" }),
+  wk.register({
+    r = { name = "rest" },
+  }, { prefix = "<leader>" }),
 }

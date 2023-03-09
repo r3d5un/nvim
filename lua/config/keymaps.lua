@@ -216,3 +216,27 @@ map(
   ":HopPattern<CR>",
   { noremap = true, silent = true, desc = "Hop to pattern" }
 )
+
+--
+-- rest client
+--
+map(
+  "n",
+  "<leader>rr",
+  "<Plug>RestNvim",
+  { noremap = true, silent = true, desc = "Run request at cursor" }
+)
+
+map(
+  "n",
+  "<leader>rl",
+  "<Plug>RestNvimLast",
+  { noremap = true, desc = "Repeat last request" }
+)
+
+map(
+  "n",
+  "<leader>rp",
+  "<Plug>RestNvimPreview",
+  { noremap = true, silent = true, desc = "Preview request at cursor" }
+)
