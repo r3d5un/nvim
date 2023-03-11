@@ -240,3 +240,54 @@ map(
   "<Plug>RestNvimPreview",
   { noremap = true, silent = true, desc = "Preview request at cursor" }
 )
+
+--
+-- Move highlighted lines
+--
+map(
+  "v",
+  "J",
+  ":m '>+1<CR>gv=gv",
+  { noremap = true, silent = true, desc = "Move highlighted linges down" }
+)
+map(
+  "v",
+  "K",
+  ":m '<-2<CR>gv=gv",
+  { noremap = true, silent = true, desc = "Move highlighted lines up" }
+)
+
+--
+-- Half page movement
+--
+map("n", "<C-d>", "<C-d>zz", {
+  noremap = true,
+  silent = true,
+  desc = "Move half page down with cursor in the middle",
+})
+map("n", "<C-u>", "<C-u>zz", {
+  noremap = true,
+  silent = true,
+  desc = "Move half page up with cursor in the middle",
+})
+
+--
+-- Make search results stay in the middle
+--
+map("n", "n", "nzzzv", {
+  noremap = true,
+  silent = true,
+  desc = "Next search result stays in the middle",
+})
+map("n", "N", "Nzzzv", {
+  noremap = true,
+  silent = true,
+  desc = "Previous search result stays in the middle",
+})
+
+map(
+  "n",
+  "Q",
+  "<nop>",
+  { noremap = true, silent = true, desc = "Disable shortcut for ex mode" }
+)
