@@ -16,4 +16,7 @@ return {
   wk.register({
     r = { name = "rest" },
   }, { prefix = "<leader>" }),
+  wk.register({
+    z = { name = "zen" },
+  }, { prefix = "<leader>" }),
 }

@@ -119,6 +119,31 @@ map(
 
 map(
   "n",
+  "<leader>wH",
+  "<C-w>H",
+  { noremap = true, silent = true, desc = "Move window left" }
+)
+map(
+  "n",
+  "<leader>wj",
+  "<C-w>J",
+  { noremap = true, silent = true, desc = "Move window down" }
+)
+map(
+  "n",
+  "<leader>wK",
+  "<C-w>K",
+  { noremap = true, silent = true, desc = "Move window up" }
+)
+map(
+  "n",
+  "<leader>wL",
+  "<C-w>L",
+  { noremap = true, silent = true, desc = "Move window right" }
+)
+
+map(
+  "n",
   "<leader>wv",
   "<C-W>v",
   { noremap = true, silent = true, desc = "Split window right" }
@@ -290,4 +315,14 @@ map(
   "Q",
   "<nop>",
   { noremap = true, silent = true, desc = "Disable shortcut for ex mode" }
+)
+
+--
+-- Zen mode
+--
+map(
+  "n",
+  "<leader>z",
+  ":ZenMode<CR>",
+  { noremap = true, silent = true, desc = "Toggle Zen Mode" }
 )
