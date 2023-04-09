@@ -209,7 +209,7 @@ map(
 )
 map(
   "n",
-  "<leader>ch",
+  "<leader>cH",
   "<Cmd>lua vim.lsp.buf.signature_help()<CR>",
   { noremap = true, silent = true, desc = "Signature help text" }
 )
