@@ -326,3 +326,31 @@ map(
   ":ZenMode<CR>",
   { noremap = true, silent = true, desc = "Toggle Zen Mode" }
 )
+
+--
+-- tmux
+--
+map(
+  "n",
+  "<C-h>",
+  "<Cmd> TmuxNavigateLeft<CR>",
+  { noremap = true, silent = true, desc = "tmux window left" }
+)
+map(
+  "n",
+  "<C-l>",
+  "<Cmd> TmuxNavigateRight<CR>",
+  { noremap = true, silent = true, desc = "tmux window right" }
+)
+map(
+  "n",
+  "<C-j>",
+  "<Cmd> TmuxNavigateDown<CR>",
+  { noremap = true, silent = true, desc = "tmux window down" }
+)
+map(
+  "n",
+  "<C-k>",
+  "<Cmd> TmuxNavigateUp<CR>",
+  { noremap = true, silent = true, desc = "tmux window up" }
+)
