@@ -125,7 +125,7 @@ map(
 )
 map(
   "n",
-  "<leader>wj",
+  "<leader>wJ",
   "<C-w>J",
   { noremap = true, silent = true, desc = "Move window down" }
 )
