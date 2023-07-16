@@ -215,34 +215,6 @@ map(
 )
 
 --
--- Hop
---
-map(
-  "n",
-  "<leader>hw",
-  ":HopWord<CR>",
-  { noremap = true, silent = true, desc = "Hop to word" }
-)
-map(
-  "n",
-  "<leader>hl",
-  ":HopLine<CR>",
-  { noremap = true, silent = true, desc = "Hop to line" }
-)
-map(
-  "n",
-  "<leader>hc",
-  ":HopChar2<CR>",
-  { noremap = true, silent = true, desc = "Hop to char" }
-)
-map(
-  "n",
-  "<leader>hp",
-  ":HopPattern<CR>",
-  { noremap = true, silent = true, desc = "Hop to pattern" }
-)
-
---
 -- rest client
 --
 map(

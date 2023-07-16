@@ -11,9 +11,6 @@ return {
     g = { name = "goto" },
   }, { prefix = "<leader>c" }),
   wk.register({
-    h = { name = "hop" },
-  }, { prefix = "<leader>" }),
-  wk.register({
     r = { name = "rest" },
   }, { prefix = "<leader>" }),
   wk.register({
