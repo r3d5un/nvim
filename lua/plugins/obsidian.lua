@@ -7,6 +7,7 @@ return {
         vim.fn.jobstart({ "firefox", url })
       end,
       mappings = {},
+      disable_frontmatter = true,
     })
   end,
 }
