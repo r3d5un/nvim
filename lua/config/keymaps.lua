@@ -90,6 +90,77 @@ map(
 )
 
 --
+-- OBSIDIAN
+--
+
+map(
+  "n",
+  "<leader>nO",
+  "<Cmd>ObsidianOpen<CR>",
+  { noremap = true, silent = true, desc = "Open Obsidian" }
+)
+map(
+  "n",
+  "<leader>nn",
+  "<Cmd>ObsidianNew<CR>",
+  { noremap = true, silent = true, desc = "New Note" }
+)
+map(
+  "n",
+  "<leader>nF",
+  "<Cmd>ObsidianQuickSwitch<CR>",
+  { noremap = true, silent = true, desc = "Quick Search" }
+)
+map(
+  "n",
+  "<leader>nf",
+  "<Cmd>ObsidianSearch<CR>",
+  { noremap = true, silent = true, desc = "Search" }
+)
+map(
+  "n",
+  "<leader>no",
+  "<Cmd>ObsidianFollowLink<CR>",
+  { noremap = true, silent = true, desc = "Follow Link" }
+)
+map(
+  "n",
+  "<leader>nb",
+  "<Cmd>ObsidianBacklinks<CR>",
+  { noremap = true, silent = true, desc = "Backlinks" }
+)
+map(
+  "n",
+  "<leader>nd",
+  "<Cmd>ObsidianToday<CR>",
+  { noremap = true, silent = true, desc = "Today" }
+)
+map(
+  "n",
+  "<leader>ny",
+  "<Cmd>ObsidianYesterday<CR>",
+  { noremap = true, silent = true, desc = "Yesterday" }
+)
+map(
+  "n",
+  "<leader>nt",
+  "<Cmd>ObsidianTemplates<CR>",
+  { noremap = true, silent = true, desc = "Templates" }
+)
+map(
+  "n",
+  "<leader>nl",
+  "<Cmd>ObsidianLink<CR>",
+  { noremap = true, silent = true, desc = "Link" }
+)
+map(
+  "n",
+  "<leader>nL",
+  "<Cmd>ObsidianLinkNew<CR>",
+  { noremap = true, silent = true, desc = "Link New" }
+)
+
+--
 -- WINDOW MANAGEMENT
 --
 map(
