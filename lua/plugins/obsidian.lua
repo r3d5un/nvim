@@ -1,5 +1,5 @@
 return {
-  "epwalksh/obsidian.nvim",
+  "epwalsh/obsidian.nvim",
   config = function()
     require("obsidian").setup({
       dir = vim.fn.expand("~/Documents/Notes"),
@@ -7,7 +7,7 @@ return {
         vim.fn.jobstart({ "firefox", url })
       end,
       mappings = {},
-      disable_frontmatter = true,
+      disable_frontmatter = false,
       daily_notes = {
         folder = "dailies",
         date_format = "%Y-%m-%d",
