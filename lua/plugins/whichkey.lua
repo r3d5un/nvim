@@ -4,7 +4,6 @@ return {
   wk.register({
     n = {
       name = "notes",
-      r = "zk",
     },
   }, { prefix = "<leader>" }),
   wk.register({
