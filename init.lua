@@ -27,6 +27,8 @@ vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
+-- Sets the signcolumn color to match the rest of the editor
+vim.api.nvim_set_hl(0, 'SignColumn', { clear }) 
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -84,3 +86,7 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup('plugins')
+
+-- Set the theme to Tokyonight
+-- Configuration found under `lua/plugins/tokyonight.lua`
+vim.cmd[[colorscheme tokyonight]]
