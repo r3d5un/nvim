@@ -29,7 +29,6 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = 'yes'
 -- Sets the signcolumn color to match the rest of the editor
 vim.api.nvim_set_hl(0, 'SignColumn', { clear })
-
 -- Decrease update time
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
