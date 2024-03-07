@@ -37,6 +37,10 @@ vim.opt.timeoutlen = 300
 vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
+-- Tab settings
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
 -- Preview substitutions live
 vim.opt.inccommand = "split"
 
