@@ -70,6 +70,10 @@ map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
 -- lazygit
 map("n", "<leader>gg", "<cmd>Neogit<cr>", { desc = "Neogit" })
+
+-- obsidian
+-- map("n", "<leader>nn", "<cmd>ObsidianNew<cr>", { noremap = true, silent = true, desc = "[N]ew" })
+
 -- tmux
 map("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { noremap = true, silent = true, desc = "tmux window left" })
 map("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { noremap = true, silent = true, desc = "tmux window down" })
