@@ -57,6 +57,7 @@ return { -- LSP Configuration & Plugins
 
 				-- Opens a popup that displays documentation about the word under your cursor
 				--  See `:help K` for why this keymap
+				map("<leader>ch", vim.lsp.buf.hover, "[C]ode [H]over")
 				map("K", vim.lsp.buf.hover, "Hover Documentation")
 
 				-- WARN: This is not Goto Definition, this is Goto Declaration.
