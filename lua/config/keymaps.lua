@@ -72,7 +72,13 @@ map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 map("n", "<leader>gg", "<cmd>Neogit<cr>", { desc = "Neogit" })
 
 -- obsidian
--- map("n", "<leader>nn", "<cmd>ObsidianNew<cr>", { noremap = true, silent = true, desc = "[N]ew" })
+map("n", "<leader>nn", "<cmd>ObsidianNew<cr>", { noremap = true, silent = true, desc = "[N]ew" })
+map("n", "<leader>nd", "<cmd>ObsidianToday<cr>", { noremap = true, silent = true, desc = "To[D]ay's Daily" })
+map("n", "<leader>no", "<cmd>ObsidianFollowLink<cr>", { noremap = true, silent = true, desc = "Follow [L]ink" })
+map("n", "<leader>ny", "<cmd>ObsidianYesterday<cr>", { noremap = true, silent = true, desc = "[Y]esterday's Daily" })
+map("n", "<leader>nm", "<cmd>ObsidianTomorrow<cr>", { noremap = true, silent = true, desc = "To[m]orrow's Daily" })
+map("n", "<leader>ns", "<cmd>ObsidianSearch<cr>", { noremap = true, silent = true, desc = "[S]earch" })
+map("n", "<leader>nr", "<cmd>ObsidianRename<cr>", { noremap = true, silent = true, desc = "[R]ename" })
 
 -- tmux
 map("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { noremap = true, silent = true, desc = "tmux window left" })
