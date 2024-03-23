@@ -74,11 +74,17 @@ map("n", "<leader>gg", "<cmd>Neogit<cr>", { desc = "Neogit" })
 -- obsidian
 map("n", "<leader>nn", "<cmd>ObsidianNew<cr>", { noremap = true, silent = true, desc = "[N]ew" })
 map("n", "<leader>nd", "<cmd>ObsidianToday<cr>", { noremap = true, silent = true, desc = "To[D]ay's Daily" })
-map("n", "<leader>no", "<cmd>ObsidianFollowLink<cr>", { noremap = true, silent = true, desc = "Follow [L]ink" })
 map("n", "<leader>ny", "<cmd>ObsidianYesterday<cr>", { noremap = true, silent = true, desc = "[Y]esterday's Daily" })
 map("n", "<leader>nm", "<cmd>ObsidianTomorrow<cr>", { noremap = true, silent = true, desc = "To[m]orrow's Daily" })
 map("n", "<leader>ns", "<cmd>ObsidianSearch<cr>", { noremap = true, silent = true, desc = "[S]earch" })
 map("n", "<leader>nr", "<cmd>ObsidianRename<cr>", { noremap = true, silent = true, desc = "[R]ename" })
+map("n", "<leader>np", "<cmd>ObsidianPasteImg<cr>", { noremap = true, silent = true, desc = "[P]aste Image" })
+
+map("n", "<leader>nlf", "<cmd>ObsidianFollowLink<cr>", { noremap = true, silent = true, desc = "[F]ollow Link" })
+map("n", "<leader>nlb", "<cmd>ObsidianBacklinks<cr>", { noremap = true, silent = true, desc = "[B]acklinks" })
+map("n", "<leader>nll", "<cmd>ObsidianLink<cr>", { noremap = true, silent = true, desc = "[L]ink Document" })
+map("n", "<leader>nln", "<cmd>ObsidianLinkNew<cr>", { noremap = true, silent = true, desc = "Link [N]ew Document" })
+map("n", "<leader>nln", "<cmd>ObsidianLinkNew<cr>", { noremap = true, silent = true, desc = "Link [N]ew Document" })
 
 -- tmux
 map("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { noremap = true, silent = true, desc = "tmux window left" })
