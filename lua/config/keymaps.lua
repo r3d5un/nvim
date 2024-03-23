@@ -90,3 +90,27 @@ map("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { noremap = true, silent = true,
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic message" })
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagnostic message" })
 
+-- Trouble
+map("n", "<leader>xx", function()
+	require("trouble").toggle()
+end, { noremap = true, silent = true, desc = "Trouble" })
+
+map("n", "<leader>xw", function()
+	require("trouble").toggle("workspace_diagnostics")
+end, { noremap = true, silent = true, desc = "[W]orkspace Diagnostics" })
+
+map("n", "<leader>xd", function()
+	require("trouble").toggle("document_diagnostics")
+end, { noremap = true, silent = true, desc = "[D]ocument Diagnostics" })
+
+map("n", "<leader>xq", function()
+	require("trouble").toggle("quickfix")
+end, { noremap = true, silent = true, desc = "[Q]uickfix" })
+
+map("n", "<leader>xl", function()
+	require("trouble").toggle("loclist")
+end, { noremap = true, silent = true, desc = "[L]ocation List" })
+
+map("n", "gR", function()
+	require("trouble").toggle("lsp_references")
+end, { noremap = true, silent = true, desc = "[R]eferences" })
