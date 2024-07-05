@@ -146,3 +146,9 @@ vim.api.nvim_set_keymap(
 	":lua require('kulala').set_selected_env()<CR>",
 	{ noremap = true, silent = true, desc = "[e]nvironment" }
 )
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>ht",
+	":lua require('kulala').toggle_view()<CR>",
+	{ noremap = true, silent = true, desc = "[t]oggle body/header" }
+)
