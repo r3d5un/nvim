@@ -14,6 +14,7 @@ return {
 			["<leader>n"] = { name = "Obsidian [N]otes", _ = "which_key_ignore" },
 			["<leader>nl"] = { name = "Note [L]inks", _ = "which_key_ignore" },
 			["<leader>x"] = { name = "Diagnostics", _ = "which_key_ignore" },
+			["<leader>h"] = { name = "HTTP Client", _ = "which_key_ignore" },
 		})
 	end,
 }

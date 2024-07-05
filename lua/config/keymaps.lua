@@ -120,3 +120,29 @@ end, { noremap = true, silent = true, desc = "[L]ocation List" })
 map("n", "gR", function()
 	require("trouble").toggle("lsp_references")
 end, { noremap = true, silent = true, desc = "[R]eferences" })
+
+-- Kulala HTTP Client
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>hp",
+	":lua require('kulala').jump_prev()<CR>",
+	{ noremap = true, silent = true, desc = "[p]revious" }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>hn",
+	":lua require('kulala').jump_next()<CR>",
+	{ noremap = true, silent = true, desc = "[n]ext" }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>hr",
+	":lua require('kulala').run()<CR>",
+	{ noremap = true, silent = true, desc = "[r]un" }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>he",
+	":lua require('kulala').set_selected_env()<CR>",
+	{ noremap = true, silent = true, desc = "[e]nvironment" }
+)

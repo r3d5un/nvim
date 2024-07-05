@@ -89,3 +89,4 @@ require("lazy").setup("plugins")
 vim.cmd([[colorscheme tokyonight]])
 
 require("config.keymaps")
+require("config.kulala")
