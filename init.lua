@@ -90,3 +90,4 @@ vim.cmd([[colorscheme tokyonight]])
 
 require("config.keymaps")
 require("config.kulala")
+require("config.which-key")
