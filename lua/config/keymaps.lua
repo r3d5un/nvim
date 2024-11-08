@@ -128,3 +128,6 @@ vim.api.nvim_set_keymap(
 	":lua require('kulala').toggle_view()<CR>",
 	{ noremap = true, silent = true, desc = "[t]oggle body/header" }
 )
+
+-- Zen Mode
+map("n", "<leader>wz", "<cmd>ZenMode<cr>", { noremap = true, silent = true, desc = "zenmode" })
