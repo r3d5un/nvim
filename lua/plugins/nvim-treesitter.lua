@@ -36,7 +36,9 @@ return { -- Highlight, edit, and navigate code
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,
-			highlight = { enable = true },
+			highlight = {
+				enable = true,
+			},
 			indent = { enable = true },
 		})
 
