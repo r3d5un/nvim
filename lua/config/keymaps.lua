@@ -98,6 +98,37 @@ vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagnostic message" })
 
 -- Kulala HTTP Client
+
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>hr",
+	":lua require('kulala').run()<CR>",
+	{ noremap = true, silent = true, desc = "[r]un" }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>ha",
+	":lua require('kulala').run_all()<CR>",
+	{ noremap = true, silent = true, desc = "run [a]ll" }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>hR",
+	":lua require('kulala').replay()<CR>",
+	{ noremap = true, silent = true, desc = "[R]eplay" }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>hc",
+	":lua require('kulala').copy()<CR>",
+	{ noremap = true, silent = true, desc = "[c]opy as cURL" }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>hc",
+	":lua require('kulala').close()<CR>",
+	{ noremap = true, silent = true, desc = "e[x]it kulala window and current buffer" }
+)
 vim.api.nvim_set_keymap(
 	"n",
 	"<leader>hp",
@@ -109,12 +140,6 @@ vim.api.nvim_set_keymap(
 	"<leader>hn",
 	":lua require('kulala').jump_next()<CR>",
 	{ noremap = true, silent = true, desc = "[n]ext" }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<leader>hr",
-	":lua require('kulala').run()<CR>",
-	{ noremap = true, silent = true, desc = "[r]un" }
 )
 vim.api.nvim_set_keymap(
 	"n",
